@@ -7,6 +7,6 @@ print(df1.shape)
 print(df2.shape)
 
 df_combined = pd.DataFrame(df1.merge(df2, on='cust_no', how='left'))
-print(df_combined)
+print(df_combined.to_string())
 
 df_combined.to_excel('merged.xlsx')
